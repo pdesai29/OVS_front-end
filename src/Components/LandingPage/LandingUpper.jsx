@@ -32,7 +32,7 @@ class LandingUpper extends Component {
   constructor(props) {
     super(props);
     const userData = JSON.parse(window.localStorage.getItem("customerData"));
-    console.log(userData);
+    // console.log(userData);
     this.state = {
       data: [],
       visible: false,

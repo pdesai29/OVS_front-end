@@ -256,7 +256,7 @@ function OtpDrawer({ phoneNumber, name, email, password, setState, state }) {
         phonenumber: phoneNumber,
       })
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         alert("Registeration Successfull");
         setState2({ ...state2, right: false });
         setState({ ...state, right: false });
@@ -264,7 +264,7 @@ function OtpDrawer({ phoneNumber, name, email, password, setState, state }) {
         history.push("/my-account");
       })
       .catch((err) => {
-        console.log(err.response.data);
+        // console.log(err.response.data);
         alert(err.response.data.message);
       });
   };
@@ -288,7 +288,7 @@ function OtpDrawer({ phoneNumber, name, email, password, setState, state }) {
         setState2({ ...state2, right: true });
       })
       .catch((err) => {
-        console.log(err.response.data);
+        // console.log(err.response.data);
         alert(err.response.data.message);
       });
   };
@@ -315,6 +315,8 @@ function OtpDrawer({ phoneNumber, name, email, password, setState, state }) {
               <div className="row">
                 <div className="col-lg-6 ml-3">
                   <h3>Enter OTP</h3>
+                  <h3>Default OTP - 9000</h3>
+
                   <small>We've sent an OTP to your phone number.</small>
                 </div>
                 <div className="col-lg-4 ml-4">

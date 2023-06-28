@@ -56,7 +56,7 @@ const Map = () => {
 
     axios(config)
       .then(function (response) {
-        console.log("Geolocation", response.data);
+        // console.log("Geolocation", response.data);
         getLocation(response.data.features);
       })
       .catch(function (error) {
@@ -77,7 +77,7 @@ const Map = () => {
           long,
           place_name,
         };
-        console.log("getLocation", Coordinates);
+        // console.log("getLocation", Coordinates);
         localStorage.setItem("CustomerCurrentLoc", JSON.stringify(Coordinates));
       }
     });
@@ -104,7 +104,7 @@ const Map = () => {
           trackUserLocation={true}
           showUserLocation={true}
           onGeolocate={(e) => {
-            console.log("onGeolocate", e);
+            // console.log("onGeolocate", e);
             setCustomerCoords({
               lat: data.lat,
               long: data.long,

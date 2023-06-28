@@ -115,14 +115,14 @@ function HomeDummy() {
   const getData = (filter, userData) => {
     let config;
     if (userData) {
-      console.log("inside if");
+      // console.log("inside if");
       config = {
         method: "get",
         url: `https://ovs-backend.onrender.com/api/v1/garages/garages-within/2/center/${userData.geometry.coordinates[1]},${userData.geometry.coordinates[0]}/unit/km/subCategory/${filter}`,
         headers: {},
       };
     } else {
-      console.log("inside else");
+      // console.log("inside else");
       config = {
         method: "get",
         url: `https://ovs-backend.onrender.com/api/v1/garages/garages-within/2/center/${coords.lat},${coords.long}/unit/km/subCategory/${filter}`,
@@ -149,7 +149,9 @@ function HomeDummy() {
           setTotalThreeWheelerOnly(response.data.results);
         }
       })
-      .catch(function (error) {
+      .catch(function (error)
+      {
+        alert(error.response.data);
         console.log(error.response.data);
       });
   };

@@ -169,7 +169,7 @@ export default function TemporaryDrawer() {
         place_name: data.place_name,
       })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         history.push("/temp");
       })
       .then((res) => {

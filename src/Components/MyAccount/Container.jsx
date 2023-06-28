@@ -61,7 +61,7 @@ const Container = () => {
   }, []);
 
   const handleChange = (data) => {
-    console.log(data);
+    // console.log(data);
     setNewdata(data);
   };
   /*   console.log(data); */

@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 const SortGarages = (props) => {
-  console.log("props", props.filter, typeof props.filter);
+  // console.log("props", props.filter, typeof props.filter);
   // const { filter } = props.filter;
   const history = useHistory();
   const [data, setData] = useState([]);
@@ -95,7 +95,7 @@ const SortGarages = (props) => {
       });
   };
 
-  console.log(data);
+  // console.log(data);
 
   const filterData = (sort) => {
     var config = {

@@ -170,7 +170,7 @@ function OtpDrawer({ phoneNumber, setState, state }) {
         otp: parseInt(otp),
       })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         // alert('Login Successfull');
         setState2({ ...state2, right: false });
         setState({ ...state, right: false });
@@ -178,7 +178,7 @@ function OtpDrawer({ phoneNumber, setState, state }) {
         history.push("/GarageList");
       })
       .catch((err) => {
-        console.log(err.response.data);
+        // console.log(err.response.data);
         alert(err.response.data.message);
       });
   };
@@ -197,7 +197,7 @@ function OtpDrawer({ phoneNumber, setState, state }) {
         setState2({ ...state2, right: true });
       })
       .catch((err) => {
-        console.log(err.response.data);
+        // console.log(err.response.data);
         alert(err.response.data.message);
       });
   };
@@ -224,6 +224,8 @@ function OtpDrawer({ phoneNumber, setState, state }) {
               <div className="row">
                 <div className="col-lg-6 ml-3">
                   <h3>Enter OTP</h3>
+                  <h3>Default OTP - 9000</h3>
+
                   <small>We've sent an OTP to your phone number.</small>
                 </div>
                 <div className="col-lg-4 ml-4">

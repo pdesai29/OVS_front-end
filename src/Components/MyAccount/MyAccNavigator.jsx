@@ -55,7 +55,7 @@ function MyAccNavigator() {
   useEffect(() => {
     setName(JSON.parse(localStorage.getItem("customerData")).name);
   }, []);
-  console.log(name);
+  // console.log(name);
 
   return (
     <Wrapper className="container-fluid shadow">

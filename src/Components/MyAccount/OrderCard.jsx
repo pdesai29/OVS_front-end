@@ -97,7 +97,7 @@ const OrderCard = (props) => {
       sethandleCancel("reviewed");
     } else {
       sethandleCancel(data.orderStatus);
-      console.log("inside useEffect");
+      // console.log("inside useEffect");
     }
   });
 
@@ -128,7 +128,7 @@ const OrderCard = (props) => {
         },
       })
       .then((res) => {
-        console.log("inside patch", res);
+        // console.log("inside patch", res);
         sethandleCancel(res.data.data.orderStatus);
       });
 

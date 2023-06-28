@@ -42,7 +42,7 @@ const Title = styled.div`
 
 const ShowMoreGarages = (props) => {
   const [filter, setFilter] = useState("");
-  console.log(props);
+  // console.log(props);
   useEffect(() => {
     if (
       props.location.filter !== undefined ||

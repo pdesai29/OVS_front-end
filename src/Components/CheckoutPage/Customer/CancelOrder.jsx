@@ -25,7 +25,7 @@ const Title = styled.p`
 
 const CancelOrder = () => {
   const history = useHistory();
-  console.log("inside time out callback");
+  // console.log("inside time out callback");
   (() => {
     setTimeout(() => {
       history.push({ pathname: "/my-account" });

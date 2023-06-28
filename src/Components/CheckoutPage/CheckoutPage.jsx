@@ -68,6 +68,7 @@ const CheckoutPage = (props) => {
           history.push({ pathname: "/my-account" });
         })
         .catch((err) => {
+          alert(err.response.data.message);
           console.log(err.response.data.message);
         });
     }
