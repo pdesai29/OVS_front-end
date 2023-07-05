@@ -120,7 +120,7 @@ const OrderCard = (props) => {
       // https://ovs-backend.onrender.com/
 
       // .patch(`http://localhost:9000/api/v1/orders/${id}`, {
-      .patch(`// https://ovs-backend.onrender.com/api/v1/orders/${id}`, {
+      .patch(`https://ovs-backend.onrender.com/api/v1/orders/${id}`, {
         orderStatus: "reviewed",
         review: {
           rating: value,
@@ -136,7 +136,7 @@ const OrderCard = (props) => {
       // https://ovs-backend.onrender.com/
 
       // .post("http://localhost:9000/api/v1/reviews", {
-      .post("https://ovs-backend.onrender.com/api/v1/reviews", {
+      .post("https://ovs-backend.onrender.com/api/v1/reviews/", {
         review: message,
         rating: value,
         user_id: data.user._id,

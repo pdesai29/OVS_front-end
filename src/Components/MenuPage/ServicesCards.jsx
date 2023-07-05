@@ -127,7 +127,7 @@ function ServicesCards(props) {
               ) : (
                 <div className="addCart">
                   <button className="buttoncart" onClick={() => handleDec()}>
-                    <i class="fas fa-minus"></i>
+                    {/* <i class="fas fa-minus"></i> */}
                   </button>
                   <button className="buttoncart">
                     <span style={{ fontWeight: "400" }}>
@@ -135,7 +135,7 @@ function ServicesCards(props) {
                     </span>
                   </button>
                   <button className="buttoncart" onClick={() => handleInc()}>
-                    <i class="fas fa-plus"></i>
+                    {/* <i class="fas fa-plus"></i> */}
                   </button>
                 </div>
               )}
